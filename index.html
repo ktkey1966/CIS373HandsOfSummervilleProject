@@ -205,6 +205,53 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Radio buttions for volunteers type -->
+                            <div>
+                                <p><h5>Please indicate volunteer type:</h5>
+                                <input type="radio" id="volunteer" name="volunteer_type" value="volunteer">
+                                <label for="volunteer">Volunteer</label><br>
+                                <input type="radio" id="mentor" name="mentor_type" value="mentor">
+                                <label for="mentor">Mentor</label><br>
+                                <input type="radio" id="environmentalist" name="environmentalist_type" value="enviornmentalist">
+                                <label for="environmentalist">Environmentalist</label><br>
+                                <input type="radio" id="healthcare" name="healthcare_type" value="healthcare">
+                                <label for="healthcare">Healthcare</label><br>
+                                <input type="radio" id="disaster_emergency" name="disaster_type" value="disaster">
+                                <label for="disaster">Disaster/Emergency</label><br>
+                                <input type="radio" id="animal" name="animal_type" value="animal">
+                                <label for="animal">Animal/Pet</label><br>
+                            </div>                            
+                                <!--Check boxes for volunteer type -->
+                            <div>
+                                <p><h5>Please indicate your volunteer interest(s):</h5>
+                                <input type="checkbox" id="community_service" name="community_type" value="community">
+                                <label for="community">Community Service</label><br>
+                                <input type="checkbox" id="education_mentorship" name="education_type" value="education">
+                                <label for="education">Education & Mentorship</label><br>
+                                <input type="checkbox" id="environmental_conservation" name="environmental_type" value="enviornmental">
+                                <label for="environmental">Environmental Conservation</label><br>
+                                <input type="checkbox" id="healthcare_support" name="healthcare_type" value="healthcare">
+                                <label for="healthcare">Healthcare & Support</label><br>
+                                <input type="checkbox" id="disaster_emergency" name="disaster_type" value="disaster">
+                                <label for="disaster">Disaster Relief & Emergency Services</label><br>
+                                <input type="checkbox" id="animal_welfare" name="animal_type" value="animal">
+                                <label for="animal">Animal Welfare</label><br>
+                            </div>
+                            <!-- Dropdown menu for location -->
+                            <div>
+                                <p><h5>Please select location(s):</h5>
+                                    <label for="location_of_interest">Location: </label>
+                                    <select name="location_of_interest" id="location_of_interest">
+                                        <option value="community">Community</option>
+                                        <option value="school">School</option>
+                                        <option value="forest">Forest</option>
+                                        <option value="hospital">Hospital</option>
+                                        <option value="emergency">Fire Station</option>
+                                        <option value="shelter">Animal Shelter</option>
+                                        <option valut="Other">Other (enter name)</option>
+                                    </select>
+                                    <input type="text" id="other_location">
+                            </div>
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
