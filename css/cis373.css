@@ -1,4 +1,4 @@
-﻿<style >
+﻿
 .page-section {
     text-align: center;
 }
@@ -32,9 +32,6 @@
         opacity: 1
     }
 
-</style >
-
-<style >
 /* Internal CSS KKey 3/15/25 */
 .caption {
     caption-side: top;
@@ -53,5 +50,3 @@ table, th, td {
     font-size: 25px;
     padding: 10px;
 }
-
-</style >
