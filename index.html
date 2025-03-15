@@ -10,86 +10,19 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!--<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Internal JavaScript -->        <!-- Modified KKey 3/1/2025 -->
-        <script type= "text/javascript">
-            function validateForm() {
-                                             //Modified KKey 3/8/25 
-                let x1 = document.forms["contactForm"]["name"].value;
-                if (x1 == "") {
-                    alert("Name must be filled in");
-                    return false;
-                }
-                let x2 = document.forms["contactForm"]["email"].value;
-                if (x2 == "") {
-                    alert("Email must be filled in");
-                    return false;
-                }
-                let mailformat = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
-                if (!document.forms["contactForm"]["email"].value.match(mailformat))
-                {
-                    alert("You have entered an invalid email address");
-                    return false;
-                }
-                let x3 = document.forms["contactForm"]["phone"].value;
-                if (x3 == "") {
-                    alert("Phone must be filled in");
-                    return false;
-                }
-                let x4 = document.forms["contactForm"]["message"].value;
-                if (x4 == "") {
-                    alert("Message must be filled in");
-                    return false;
-                }
-            }
-            function getRadioValue(radio) {
-                alert("You selected " + radio.value);
-            }
-            function getCheckboxClick(checkbox) {
-                alert("You selected " + checkbox.value);
-            }
-            function getMenuSelection(menu) {
-                alert("You selected " + menu.value);
-            }
-            function getTextboxEntry(textbox) {
-                alert("You selected " + textbox.value);
-            }
+        <!--<script type= "text/javascript">
+           
         </script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/cis373.css" rel="stylesheet" />
         <style>
-            .page-section {
-                text-align: center;
-            }
-            .page-section ul {
-                text-align: left;
-                display: inline-block;
-            }
-            .list-text-color {
-                color: white;
-                font-size: 1.3em;
-            }
-                                        /* Modified KKey 3/8/25 */
-            .submit_button {
-                background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                opacity: 0.6;
-                transition: 0.3s;
-            }
-            .submit_button:hover {
-                opacity: 1
-            }
+     
         </style>
     </head>
     <body id="page-top">
@@ -199,6 +132,39 @@
                 </div>
             </div>
         </section>
+         <!-- Add Table Section KKey 3/15/25 -->
+        <div>
+            <table class="center">
+                <caption class="caption">Volunteer Locations</caption>
+                <tr>
+                    <th>Places</th>
+                    <th>Locations</th>
+                </tr>
+                <tr>
+                    <td>Summerville Park</td>
+                    <td style="text-align: center;">123 Park St.</td>
+                </tr>
+                 <tr>
+                    <td>Summerville Community Center</td>
+                    <td style="text-align: center;">345 Community Blvd.</td>
+                </tr>
+                 <tr>
+                    <td>Summerville Forest Preserve</td>
+                    <td style="text-align: center;">Forest Hwy 1</td>
+                </tr>
+                 <tr>
+                    <td>Summerville Senior Living</td>
+                    <td style="text-align: center;">567 Senior Ave.</td>
+                </tr>
+                 <tr>
+                    <td>Summerville Volunteer Fire House</td>
+                    <td style="text-align: center;">789 Firestation Way.</td>
+                </tr>
+                 <tr>
+                    <td>Summerville Animal Shelter</td>
+                    <td style="text-align: center;">901 Pet Pl.</td>
+                </tr>
+        </div>
          <!-- Volunteer Section-->
         <section class="page-section bg-info text-white mb-0" id="volunteer">
             <div class="container">
@@ -372,25 +338,25 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            123 Summerville Street
                             <br />
-                            Clark, MO 65243
+                            Summerville, SC 12345
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjrqPbuj4yMAxX_Eq0GHdxjDJYYABAAGgJwdg&co=1&ase=2&gclid=EAIaIQobChMI66j27o-MjAMV_xKtBh3cYwyWEAAYASAAEgKpvPD_BwE&ohost=www.google.com&cid=CAASJuRoxI9vOoUBLhY97NNUq0jLaAJ-u0nkOiPIO-jD5Qb8xzVExaEO&sig=AOD64_3wuV5nPDDpDTCecQZ82TuthPBmCQ&q&nis=4&adurl&ved=2ahUKEwjXmfLuj4yMAxXmxuYEHTo7B-oQ0Qx6BAgKEAE"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.tiktok.com/?kuid=31b6d78a-c086-437f-9ab0-df56eaf7fd8b&kref=vGWRdzLJnjYf"><i class="fab fa-fw fa-tiktok"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjRlqjwkIyMAxU1CK0GHb0-Ma8YABAAGgJwdg&co=1&gclid=EAIaIQobChMI0Zao8JCMjAMVNQitBh29PjGvEAAYASAAEgLCFPD_BwE&ohost=www.google.com&cid=CAASJuRoB13xfL9ET_ELWWu_40xSGSjVQ__VN4RxhO4080DBoynLkp4S&sig=AOD64_21WEw2sH6nN7s-CgJ2-vJahgC11A&q&adurl&ved=2ahUKEwiR1qTwkIyMAxXtHjQIHfmTIg0Q0Qx6BAgJEAE"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">About Helping Hands of Summerville</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            Helping Hands of Summerville is a school project theme created by
+                            <a href="https://github.com/ktkey1966/CIS373HandsOfSummervilleProject">ktkey1966</a>
                             .
                         </p>
                     </div>
@@ -399,7 +365,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+            <div class="container"><small>Copyright &copy; Kevin Key March 2025</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -610,8 +576,8 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!-- JavaScript code added for CIS-373 -->
+        <script src="js/cis373.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
